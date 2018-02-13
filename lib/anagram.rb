@@ -1,4 +1,6 @@
-class Anagram
+require 'pry'
+
+lass Anagram
   attr_accessor :word, :anagrams
 
   def initialize(word)
