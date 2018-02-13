@@ -7,13 +7,14 @@ class Anagram
   end
 
   def match(word_list)
+    matches = []
     array = @word.split
     array.sort!
-    word_list.collect do |match|
+    word_list.each do |match|
       compare = match.split
       compare.sort!
       if array == compare
-        match
+        matches = match
       end
     end
   end
