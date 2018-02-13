@@ -14,7 +14,7 @@ class Anagram
     word_list.each do |match|
       compare = match.split("")
       compare.sort!
-      if array == compare
+      if sorted == compare
         matches = match
       end
     end
