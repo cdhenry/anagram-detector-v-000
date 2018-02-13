@@ -10,7 +10,7 @@ class Anagram
     matches = []
     array = @word.split
     array.sort!
-    word_list.each do |match|
+    word_list.each do |match| 
       compare = match.split
       compare.sort!
       if array == compare
