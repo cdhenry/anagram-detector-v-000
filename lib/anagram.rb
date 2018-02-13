@@ -15,7 +15,7 @@ class Anagram
     word_list.each do |match|
       compare = match.split("")
       sorted_match = compare.sort
-      if sorted == compare
+      if sorted == sorted_match
         matches << match
       end
     end
