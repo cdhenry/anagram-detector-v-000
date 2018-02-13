@@ -9,8 +9,8 @@ class Anagram
 
   def match(word_list)
     matches = []
-    array = @word.split
-    sorted = array.sort("")
+    array = @word.split("")
+    sorted = array.sort
     word_list.each do |match|
       compare = match.split("")
       compare.sort!
