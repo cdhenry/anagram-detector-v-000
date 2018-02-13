@@ -14,7 +14,7 @@ class Anagram
     binding.pry
     word_list.each do |match|
       compare = match.split("")
-      compare.sort!
+      sorted_match = compare.sort
       if sorted == compare
         matches = match
       end
