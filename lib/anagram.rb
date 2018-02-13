@@ -19,6 +19,5 @@ class Anagram
       end
     end
     matches
-    binding.pry
   end
 end
