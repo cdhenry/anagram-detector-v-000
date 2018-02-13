@@ -17,5 +17,6 @@ class Anagram
         matches = match
       end
     end
+    matches
   end
 end
