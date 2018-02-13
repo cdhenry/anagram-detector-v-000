@@ -2,12 +2,19 @@
 class Anagram
   attr_accessor :word, :anagrams
 
-  def initialize(word, anagrams)
+  def initialize(word)
     @word = word
-    @anagrams = anagrams
   end
 
-  def match
-
+  def match(word_list)
+    array = @word.split
+    array.sort!
+    word_list.each do |match|
+      compare = match.split
+      compare.sort!
+      if array == compare
+        return true
+      end
+    end
   end
 end
