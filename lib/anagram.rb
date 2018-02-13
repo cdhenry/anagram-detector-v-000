@@ -1,4 +1,5 @@
-# Your code goes here!
+require 'pry'
+
 class Anagram
   attr_accessor :word, :anagrams
 
@@ -10,13 +11,16 @@ class Anagram
     matches = []
     array = @word.split
     array.sort!
+    binding.pry
     word_list.each do |match|
       compare = match.split
       compare.sort!
+      binding.pry
       if array == compare
         matches = match
       end
     end
     matches
+    binding.pry
   end
 end
