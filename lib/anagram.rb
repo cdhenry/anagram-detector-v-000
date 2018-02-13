@@ -15,7 +15,7 @@ class Anagram
       compare = match.split("")
       sorted_match = compare.sort
       if sorted == compare
-        matches = match
+        matches << match
       end
     end
     matches
