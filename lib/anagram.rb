@@ -13,7 +13,7 @@ class Anagram
     sorted = array.sort("")
     binding.pry
     word_list.each do |match|
-      compare = match.split
+      compare = match.split("")
       compare.sort!
       if array == compare
         matches = match
